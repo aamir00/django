@@ -1,1 +1,27 @@
 Contains Implementation of the django concepts in details, the description of the branches are against their names here
+
+
+1.  Tables are created as <application_name>_<model_name>
+2.  Many to many relations new table is created.
+
+
+from company.models import Company
+google = Company(name="Google")
+microsoft = Company.objects.get(name='Microsoft')
+facebook = Company.objects.get(pk=3)
+google.save()
+google.delete()
+google.programmers_set.all() // to get programmers in a company
+
+
+
+stark = Programmers(name="Stark",company=mc);
+stark.languages.add(java)
+stark.save();
+stark.company;
+
+
+stark.languages.add(java);
+stark.save();
+
+java.programmers_set.all(); // to get programmers using java
