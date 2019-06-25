@@ -53,3 +53,4 @@ name__endswith
 
 
 Programmers.objects.all().order_by('-name') //descending
+Company.objects.all().order_by('date_created')
