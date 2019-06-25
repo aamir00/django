@@ -1,0 +1,8 @@
+Todo_App/Todo_App/__pycache__
+Todo_App/todo/migrations
+Todo_App/__pycache__
+Todo_App/todo/__pycache__
+
+django_models/company/__pycache__
+django_models/company/migrations
+django_models/django_models/__pycache__
