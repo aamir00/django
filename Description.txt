@@ -1,1 +1,4 @@
 Contains Implementation of the django concepts in details, the description of the branches are against their names here
+
+
+python manage.py createsuperuser
