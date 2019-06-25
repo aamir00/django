@@ -25,3 +25,31 @@ stark.languages.add(java);
 stark.save();
 
 java.programmers_set.all(); // to get programmers using java
+
+
+import company.models *;
+set = Company.objects.all()
+set[0].name;
+
+Company.objects.filter();
+Company.objects.filter(name__exact='Apple');
+Company.objects.filter(name__iexact='apple');
+Programmers.objects.filter(age__gt=25);
+programmers.objects.filter(age__gte=25);
+Programmers.objects.filter(age__lt=25);
+Company.objects.exclude(name__exclude='Apple');
+Company.objects.filter(name__contains='pp');
+Company.objects.filter(name__in=[]);
+Company.objects.filter(name__startswith='')
+Programmers.objects.filter(age__isnull=True);
+Programmers.objects.count()
+Programmers.objects.filter(name__contains='asfd').count()
+
+anthony = Programmers.objects.filter(name__exact='Anthony')
+anthony[0].Company
+
+name__endswith
+.get() --> returns object instead of list of objects, works if we have only 1 row result
+
+
+Programmers.objects.all().order_by('-name') //descending
