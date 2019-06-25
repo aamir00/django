@@ -2,3 +2,16 @@ Contains Implementation of the django concepts in details, the description of th
 
 
 python manage.py createsuperuser
+
+include('todo.urls') // in project urls file
+
+// inside todo
+
+urlpatterns = [
+    path('', views.index , name='index')
+]
+
+// load static at the top of the template
+{% load static %}
+
+href="{% static 'todo/bs/css/flatly.min.css' %}
