@@ -15,3 +15,16 @@ urlpatterns = [
 {% load static %}
 
 href="{% static 'todo/bs/css/flatly.min.css' %}
+
+// create Todo model and register it with admin
+
+// On home page query db for all todo's
+
+def index(request):
+    todo_all_res = Todo.objects.filter().order_by('id')
+    # to get all records
+    context={'todo_all_res' : todo_all_res }
+    #context can be passed to the template and can be used their
+    return render(request, 'todo/index.html', context)
+
+// on index.html use the context to display the results
